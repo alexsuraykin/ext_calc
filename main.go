@@ -3,7 +3,7 @@ package main
 import (
 	"bufio"
 	"fmt"
-	"io/ioutils"
+	"io/ioutil"
 	"os"
 	"regexp"
 	"strconv"
@@ -27,7 +27,7 @@ func main() {
 	}
 
 	// Читаем содержимое файла с выражениями
-	content, err := ioutils.ReadFile(inputFile)
+	content, err := ioutil.ReadFile(inputFile)
 	if err != nil {
 		fmt.Printf("Error reading input file: %v\n", err)
 		return
